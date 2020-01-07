@@ -1,5 +1,8 @@
 module GridViewer
 
-greet() = print("Hello World!")
+include("main.jl")
+
+export D3Grid, run, update
+export AbstractGrid
 
 end # module
