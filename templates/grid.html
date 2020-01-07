@@ -64,8 +64,12 @@
                 .attr("fill", "steelblue")
                 .attr("x", function(d) { return d[0]*{{c_width}}; })
                 .attr("y", function(d) { return d[1]*{{c_height}}; })
-					.append("svg:title")
-					.text(function(d) {return "x: " + d[0] + ", y: " + d[1]});
+								.style("opacity", 1.0)
+								.transition()
+								.duration(1000)
+								.style("opacity", 0.0)
+								.append("svg:title")
+								.text(function(d) {return "x: " + d[0] + ", y: " + d[1]});
         },
         function(error) {
             console.warn(error);
@@ -85,8 +89,12 @@
                 .attr("fill", "steelblue")
                 .attr("x", function(d) { return d[0]*{{c_width}}; })
                 .attr("y", function(d) { return d[1]*{{c_height}}; })
-				.append("svg:title")
-				.text(function(d) {return "x: " + d[0] + ", y: " + d[1]});
+								.style("opacity", 1.0)
+								.transition()
+								.duration(1000)
+								.style("opacity", 0.0)
+								.append("svg:title")
+								.text(function(d) {return "x: " + d[0] + ", y: " + d[1]});
         },
         function(error) {
             console.warn(error);
