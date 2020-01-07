@@ -1,6 +1,3 @@
-using GridViewer
-using Test
+using SafeTestsets
 
-@testset "GridViewer.jl" begin
-    # Write your own tests here.
-end
+@safetestset "Grid tests" begin include("grid.jl") end

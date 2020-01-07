@@ -3,11 +3,15 @@ uuid = "54eb3851-da55-4f7c-8bc9-48cdb56e1cda"
 authors = ["Andrey Oskin"]
 version = "0.1.0"
 
+[deps]
+Mux = "a975b10e-0019-58db-a62f-e48ff68538c9"
+
 [compat]
 julia = "1.3"
 
 [extras]
 Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+SafeTestsets = "1bc83da4-3b8d-516f-aca4-4fe02f6d838f"
 
 [targets]
-test = ["Test"]
+test = ["Test", "SafeTestsets"]
